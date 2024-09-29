@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User Record</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           background-image:url(images/delete.jpg);
+             background-repeat:no-repeat;
+            background-size:cover;
+        }
+
+        .styled-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .delete-button {
+            background-color: #ff5757;
+            color: #fff;
+            border: none;
+        }
+
+        .delete-button:hover {
+            background-color: #e04a4a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Update Form -->
+    <form action="RegisterServlet" method="post" class="styled-form">
+        <input type="hidden" name="action" value="update">
+
+        <h2>Update User Record</h2>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+
+        <label for="mobilenumber">Mobile Number:</label>
+        <input type="text" name="mobilenumber" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="height">Height:</label>
+        <input type="text" name="height" required>
+
+        <label for="weight">Weight:</label>
+        <input type="text" name="weight" required>
+
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" required></textarea>
+
+        <label for="updateId">ID to Update:</label>
+        <input type="text" name="updateId" required>
+
+        <button type="submit">Update Record</button>
+    </form>
+
+</body>
+</html>

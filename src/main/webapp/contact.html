@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Include any additional styles or scripts here -->
+    <style>
+        /* Reset some default styles for better consistency */
+body, h2, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+      background-image: url(images/contact.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105vh;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.styled-form {
+    background-color: #ffffff;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  
+  max-width: 100%;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+ width: 200px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button {
+  width: 200px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 40px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+#h{
+  text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 700px;
+  font-size: 20px;
+  color:white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: -40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#h:hover{
+  background-color: orange;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- User Registration Form -->
+    <form action="RegisterServlet" method="post" class="styled-form">
+        <input type="hidden" name="action" value="register">
+
+        <h1>Get in Touch with Dietitian-Hub</h1>
+
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+
+        <label for="mobilenumber">Mobile Number:</label>
+        <input type="text" name="mobilenumber" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="height">Height:</label>
+        <input type="text" name="height" required>
+
+        <label for="weight">Weight:</label>
+        <input type="text" name="weight" required>
+
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" required></textarea>
+		 <button type="reset" id="re">Reset</button>
+        <button type="submit" action="Home page,html">Register</button>
+    </form>
+
+</body>
+</html>
